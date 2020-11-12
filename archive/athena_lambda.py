@@ -7,7 +7,7 @@ params = {
      'bucket' : 'gif-list-database-3b8cb02a',
      'path'  : 'queries',
      'query': 'SELECT * FROM "giflistdb"."users" limit 30;'
-     }
+    }
 
 def lambda_handler(event, context):
     client = boto3.client('athena')
